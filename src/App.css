@@ -1,38 +1,188 @@
-.App {
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,700");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color:#1e263a;
+}
+
+.nav{
+  background-color:#26334f;
+  color: white;
   text-align: center;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.nav-icon{
+  font-size: 27px;
+  margin-bottom: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-text{
+  font-size: 27px;
+  margin-bottom: 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main{
+  margin: 20px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: #151c2c;
+  height: 100%;
+  color: white;
+  margin-bottom: 10px;
+  margin-right: 13px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.left-head{
+  width: 100%;
+  height: auto;
+  background-color: rgba(42, 56, 88, 0.1);
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(138, 43, 226, 0.2);
+}
+
+.left-head p{
+  margin-bottom: 0px;
+}
+
+.left-head-title{
+  font-size: 15px;
+  color: blueviolet;
+}
+
+.left-head-value{
+  font-size: 23px;
+}
+
+.left-body{
+  padding: 10px;
+}
+
+.table{
+  margin-bottom: 0 !important;
+}
+
+.table tr:hover{
+  cursor: pointer;
+}
+
+.center{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 800px;
+  background-color: #151c2c;
+  height: 80vh;
   color: white;
+  margin-right: 13px;
+  padding: 30px 2px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
 }
 
-.App-link {
-  color: #61dafb;
+.form{
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form input{
+  padding-right: 37px;
+}
+
+.search{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+}
+
+.search:hover{
+  cursor: pointer;
+}
+
+.center-title{
+  margin-top: 10px;
+}
+
+.center-body{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.info-card{
+  background-color: rgba(42, 56, 88, 0.1);
+  padding: 15px 10px;
+  text-align: center;
+  box-shadow: 1px 2px 2px rgba(138, 43, 226, 0.2);
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.info-card p{
+  margin-bottom: 0px;
+}
+
+.info-card-title{
+  font-size: 17px;
+  color: blueviolet;
+}
+
+.info-card-value{
+  font-size: 25px;
+}
+
+.right-sidebar{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: #151c2c;
+  height: 100%;
+  color: white;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3);
+}
+
+.right-head{
+  width: 100%;
+  height: auto;
+  background-color: rgba(42, 56, 88, 0.1);
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 0.5px solid rgba(138, 43, 226, 0.2);
+}
+
+.right-head p{
+  margin-bottom: 0px;
+}
+
+.right-head-title{
+  font-size: 15px;
+  color: blueviolet;
+}
+
+.right-head-value{
+  font-size: 23px;
 }
